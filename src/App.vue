@@ -5,8 +5,34 @@
       <router-link to="/about">About</router-link>
     </div>
     <router-view />
+    <vue-progress-bar></vue-progress-bar>
   </div>
 </template>
+
+<script>
+export default {
+  mounted() {
+    //  [App.vue specific] When App.vue is finish loading finish the progress bar
+    this.$Progress.finish();
+  },
+  created() {
+    //  hook the progress bar to start before we move router-view
+    this.$Progress.start();
+    this.$router.beforeEach((to, from, next) => {
+      if (to.meta.progress !== undefined) {
+        let meta = to.meta.progress;
+        this.$Progress.parseMeta(meta);
+      }
+      this.$Progress.start();
+      next();
+    });
+    this.$router.afterEach(() => {
+      this.$Progress.finish();
+    });
+  }
+}
+</script>
+
 
 <style lang="scss">
 #app {

@@ -56,3 +56,8 @@
   }
 }
 </style>
+<style>
+  .banner{
+    background: black;
+  }
+</style>

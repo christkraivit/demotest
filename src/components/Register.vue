@@ -2,7 +2,6 @@
   <div class="register">
     <div class="row justify-content-center my-4">
       <div class="col-lg-10">
-        <p class="h2 th text-center">สมัครสมาชิก TTS177.COM</p>
         <div class="main-div">
           <div class="text-center py-3">
             <img
@@ -147,7 +146,7 @@
                 ref="recaptcha"
                 @verify="onCaptchaVerified"
                 @expired="onCaptchaExpired"
-                sitekey="6LfSPqsUAAAAAHt-OhL34VpoHhKbu0fK5c6UUPUY"
+                sitekey="6LefQqsUAAAAAAbN3S38rx_xzwCCt42J0VC6Akn8"
               ></VueRecaptcha>
             </div>
             <input
@@ -209,7 +208,7 @@ export default {
             Swal.showLoading();
             axios
               .post(
-                "https://member.getmymoney.net/line/api/tts177/register.php",
+                "https://member.getmymoney.net/line/api/gclubmy/register.php",
                 this.formRegister
               )
               .then(response => {
@@ -322,7 +321,7 @@ export default {
   color: #fff;
 }
 .main-div {
-  background: #68686893 none repeat scroll 0 0;
+  background: #00000093 none repeat scroll 0 0;
   border-radius: 2px;
   margin: 10px auto 30px;
   padding-right: 1rem;

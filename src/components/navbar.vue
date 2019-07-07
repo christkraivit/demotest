@@ -1,9 +1,9 @@
 <template>
   <div>
-    <nav class="navbar navbar-expand-lg navbar-defult d-sm-flex d-none">
+    <nav class="navbar navbar-expand-sm navbar-defult d-sm-flex d-none">
       <ul class="navbar-nav mx-auto navbar-sele">
         <li class="nav-item">
-          <router-link to="/" class="topnav nav-link">หน้าแรก</router-link>
+          <router-link  to="/#" class="topnav nav-link">หน้าแรก</router-link>
         </li>
         <li class="nav-item">
           <router-link to="/about" class="topnav nav-link">เกี่ยวกับเรา</router-link>
@@ -15,16 +15,18 @@
           <router-link to="/promotion" class="topnav nav-link">โปรโมชั่น</router-link>
         </li>
         <li class="nav-item">
-          <a @click="deposit()"  href="" class="topnav nav-link">ฝากถอน</a>
+          <a @click="deposit()" href="#" class="topnav nav-link">ฝากถอน</a>
         </li>
         <li class="nav-item">
-          <a @click="contactme()" href=""  class="topnav nav-link">ติดต่อเรา</a>
+          <a @click="contactme()" href="#" class="topnav nav-link">ติดต่อเรา</a>
         </li>
       </ul>
     </nav>
+    <!-- End meun top -->
+    
   </div>
 </template>
-<style>
+<style scoped lang="scss">
 .navbar-defult {
   background: linear-gradient(
     to right,
@@ -36,9 +38,9 @@
   );
 }
 /* Change the color of links on hover */
-li {
-  display: inline-block;
-}
+// li {
+//   display: inline-block;
+// }
 li a {
   text-decoration: none;
   font-size: 20px;
@@ -57,4 +59,8 @@ li a {
   width: 100%;
   transition: width 0.3s;
 }
+.router-link-active{
+  color:#ffffff;
+}
+
 </style>

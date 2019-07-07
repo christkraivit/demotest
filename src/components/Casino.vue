@@ -78,7 +78,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style scoped lang="scss">
 .casino-item {
   background-size: cover;
   background-repeat: no-repeat;

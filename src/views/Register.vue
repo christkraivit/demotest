@@ -30,7 +30,7 @@
             @click="linkLine()"
             type="button"
             class="mt-3 btn btn-success btn-lg btn-block"
-          >{{$line}}</button>
+          >Line : {{$line}}</button>
         </div>
       </div>
       <br />

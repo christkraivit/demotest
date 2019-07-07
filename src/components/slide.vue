@@ -6,7 +6,7 @@
   </div>
 </template>
 
-<style>
+<style scoped lang="scss">
 .slides {
   background: black;
 }

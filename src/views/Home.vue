@@ -159,7 +159,7 @@ export default {
   }
 };
 </script>
-<style>
+<style scoped lang="scss">
 .carousel {
   background: #0a0a0a;
   margin-top: 10px;

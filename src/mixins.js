@@ -19,7 +19,7 @@ Vue.mixin({
     },
     contactme() {
       const html = ` 
-            <p class="">คิดต่อเรา</p> 
+            <p class="">ติดต่อเรา</p> 
             <h4>พนักงานของเราพร้อมให้บริการ 24 ชม.ค่ะ</h4> 
             <div class="container"> 
                 <div class="row justify-content-center">            
